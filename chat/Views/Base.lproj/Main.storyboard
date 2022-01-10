@@ -336,6 +336,11 @@
                                                 <outlet property="convName" destination="SqH-tM-rTy" id="cV2-wV-xHv"/>
                                             </connections>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="convImg" destination="IHG-wT-pEE" id="HVD-JX-5NQ"/>
+                                            <outlet property="convMessage" destination="7AI-JT-XK9" id="lNc-eu-Qfr"/>
+                                            <outlet property="convName" destination="SqH-tM-rTy" id="IgI-TD-GvU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -562,7 +567,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ihE-lf-Sib"/>
+        <segue reference="jqL-F4-OG8"/>
         <segue reference="pxc-ue-7dF"/>
     </inferredMetricsTieBreakers>
     <resources>

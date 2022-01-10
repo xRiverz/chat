@@ -96,7 +96,7 @@ class MessageViewController: UIViewController {
             let currentConversations = self?.conversations
             
             if let targetConversation = currentConversations?.first(where: {
-                $0.otherEmail == DatabaseManager.safeEmail(with: result.email)
+                $0.otherEmail == DatabaseManager.safeEmail(with: result["email"] as! String)
             }) {
                 print("Here")
                 let chatVC = ChatViewController(with: targetConversation.otherEmail, id:targetConversation.id)
@@ -113,10 +113,10 @@ class MessageViewController: UIViewController {
         present(newNav, animated: true, completion: nil)
     }
     
-    func createConv(result:SearchResult){
+    func createConv(result:[String:String]){
         print(result)
-        let name = result.name
-        let email = result.email
+        let name = result["name"] as! String
+        let email = result["email"] as! String
         
         let chatVC = ChatViewController(with: email, id:nil)
         chatVC.isNew = true
@@ -139,8 +139,8 @@ class MessageViewController: UIViewController {
     
     func validateAuth() {
         if Auth.auth().currentUser == nil {
-            let mainVC = storyboard?.instantiateViewController(identifier: "Main") as! HomeViewController
-            let nav = UINavigationController(rootViewController: mainVC)
+            let vc = storyboard?.instantiateViewController(identifier: "Main") as! HomeViewController
+            let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
             present(nav, animated: false)
         }

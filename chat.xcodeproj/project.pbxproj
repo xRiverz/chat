@@ -20,8 +20,6 @@
 		C38624342785FC22004ACA09 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C38624332785FC22004ACA09 /* RealmSwift */; };
 		C38624372785FC96004ACA09 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C38624362785FC96004ACA09 /* SDWebImage */; };
 		C38624392785FC96004ACA09 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C38624382785FC96004ACA09 /* SDWebImageMapKit */; };
-		C386243E2785FD66004ACA09 /* burnt-toast-creative_16-5cd212882b759__880.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C386243B2785FD65004ACA09 /* burnt-toast-creative_16-5cd212882b759__880.jpg */; };
-		C38624402785FD66004ACA09 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C386243D2785FD66004ACA09 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg */; };
 		C38624422785FFB9004ACA09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C38624412785FFB8004ACA09 /* GoogleService-Info.plist */; };
 		C386244527860B59004ACA09 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C386244427860B59004ACA09 /* LoginViewController.swift */; };
 		C3AA871827870B2B0041C300 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA871727870B2B0041C300 /* ProfileViewController.swift */; };
@@ -66,6 +64,8 @@
 		C3AA87832789FB470041C300 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3AA87822789FB470041C300 /* MessageCell.xib */; };
 		C3AA8785278A00EE0041C300 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA8784278A00EE0041C300 /* MessageCell.swift */; };
 		C3AA8787278A146D0041C300 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA8786278A146D0041C300 /* DatabaseManager.swift */; };
+		C3AA878D278C0A9D0041C300 /* burnt-toast-creative_16-5cd212882b759__880.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3AA878C278C0A9D0041C300 /* burnt-toast-creative_16-5cd212882b759__880.jpg */; };
+		C3AA878F278C0AA20041C300 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3AA878E278C0AA20041C300 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,8 +78,6 @@
 		C38624002785F8B6004ACA09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C38624032785F8B6004ACA09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C38624052785F8B6004ACA09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C386243B2785FD65004ACA09 /* burnt-toast-creative_16-5cd212882b759__880.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "burnt-toast-creative_16-5cd212882b759__880.jpg"; path = "../../../burnt-toast-creative_16-5cd212882b759__880.jpg"; sourceTree = "<group>"; };
-		C386243D2785FD66004ACA09 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg"; path = "../../../burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg"; sourceTree = "<group>"; };
 		C38624412785FFB8004ACA09 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C386244327860774004ACA09 /* chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = chat.entitlements; sourceTree = "<group>"; };
 		C386244427860B59004ACA09 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +91,8 @@
 		C3AA87822789FB470041C300 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		C3AA8784278A00EE0041C300 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		C3AA8786278A146D0041C300 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		C3AA878C278C0A9D0041C300 /* burnt-toast-creative_16-5cd212882b759__880.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "burnt-toast-creative_16-5cd212882b759__880.jpg"; sourceTree = "<group>"; };
+		C3AA878E278C0AA20041C300 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +179,8 @@
 		C386243A2785FD53004ACA09 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				C386243B2785FD65004ACA09 /* burnt-toast-creative_16-5cd212882b759__880.jpg */,
-				C386243D2785FD66004ACA09 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg */,
+				C3AA878C278C0A9D0041C300 /* burnt-toast-creative_16-5cd212882b759__880.jpg */,
+				C3AA878E278C0AA20041C300 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg */,
 			);
 			path = img;
 			sourceTree = "<group>";
@@ -338,11 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C38624042785F8B6004ACA09 /* LaunchScreen.storyboard in Resources */,
-				C38624402785FD66004ACA09 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg in Resources */,
+				C3AA878D278C0A9D0041C300 /* burnt-toast-creative_16-5cd212882b759__880.jpg in Resources */,
 				C38624012785F8B6004ACA09 /* Assets.xcassets in Resources */,
 				C3AA87832789FB470041C300 /* MessageCell.xib in Resources */,
 				C38623FC2785F8B2004ACA09 /* Main.storyboard in Resources */,
-				C386243E2785FD66004ACA09 /* burnt-toast-creative_16-5cd212882b759__880.jpg in Resources */,
+				C3AA878F278C0AA20041C300 /* burnt-toast-illustration-freelance-hamilton-27g2S20.jpeg in Resources */,
 				C38624422785FFB9004ACA09 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
