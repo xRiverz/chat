@@ -15,10 +15,10 @@ class NewMessageViewController: UIViewController {
     
     let spinner = JGProgressHUD(style: .dark)
     
-    var completion : ((SearchResult) -> (Void))?
+    var completion : (([String:String]) -> (Void))?
     
     var users = [[String:String]] ()
-    var results = [SearchResult] ()
+    var results = [[String:String]] ()
     var hasFetced = false
     
     private var searchBar: UISearchBar = {
@@ -58,8 +58,8 @@ extension NewMessageViewController : UITableViewDelegate, UITableViewDataSource 
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = results[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
+        cell.textLabel?.text = results[indexPath.row]["name"]
         
         return cell
     }
@@ -75,7 +75,7 @@ extension NewMessageViewController : UITableViewDelegate, UITableViewDataSource 
 
 extension NewMessageViewController : UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
+      //  print("done")
         guard let text = searchBar.text, !text.isEmpty else {
             return
         }
@@ -92,9 +92,10 @@ extension NewMessageViewController : UISearchBarDelegate {
             DatabaseManager.shared.getAllUsers(completion: { results in
                 switch results {
                 case .success(let userCollection):
+                    
                     self.hasFetced = true
                     self.users = userCollection
-                    self.filterUsers(term:"" )
+                    self.filterUsers(term: query )
                 case .failure(let erorr):
                     print("faild to get users:\(erorr)")
                 }
@@ -117,7 +118,7 @@ extension NewMessageViewController : UISearchBarDelegate {
             return name.hasPrefix(term.lowercased())
         })
             
-        //self.results = result
+        self.results = result
         updateUI()
     }
     
