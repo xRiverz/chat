@@ -363,8 +363,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="wdn-4N-zB0"/>
                     <connections>
-                        <outlet property="noLabel" destination="n8S-Uf-Gmm" id="X2G-x6-qfW"/>
-                        <outlet property="tableView" destination="FfH-sU-ihy" id="eSi-IL-yrp"/>
+                        <outlet property="noLabel" destination="n8S-Uf-Gmm" id="bH0-yg-Z13"/>
+                        <outlet property="tableView" destination="FfH-sU-ihy" id="qC6-RZ-kuT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I6f-it-iqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
